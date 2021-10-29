@@ -61,7 +61,7 @@ class V1alpha1S3Artifact(object):
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
-
+        self.local_vars_configuration.client_side_validation = False
         self._access_key_secret = None
         self._bucket = None
         self._endpoint = None
