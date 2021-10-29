@@ -51,7 +51,7 @@ class V1alpha1CronWorkflowList(object):
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
-
+        self.local_vars_configuration.client_side_validation = False
         self._api_version = None
         self._items = None
         self._kind = None
